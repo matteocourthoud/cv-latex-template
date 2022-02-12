@@ -1,0 +1,198 @@
+\documentclass[a4paper]{mctemplate} % a4paper for A4
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+% BACKGROUND SHAPES
+%----------------------------------------------------------------------------------------
+
+% Specify sidebar width and header height
+\makebackground{7cm}{3.5cm}
+
+%----------------------------------------------------------------------------------------
+% HEADER
+%----------------------------------------------------------------------------------------
+
+% Specify name, surname and title
+\makeheader{Matteo}{Courthoud}{Ph.D. Candidate in Economics}
+
+%----------------------------------------------------------------------------------------
+% SIDEBAR
+%----------------------------------------------------------------------------------------
+
+\begin{sidebar}
+
+% Specify radius of profile picture
+\makepicture{2.1cm}
+
+%-------------------------------%
+
+\begin{contacttable}
+	\contactitem{phone}{}{+39 3314266587}
+	\contactitem{envelope}{mailto:matteo.courthoud@gmail.com}{matteo.courthoud@gmail.com}
+	\contactitem{globe}{https://matteocourthoud.github.io/}{matteocourthoud.github.io}
+	\contactitem{github}{https://github.com/matteocourthoud}{matteocourthoud}
+	\contactitem{linkedin}{https://www.linkedin.com/in/matteo-courthoud}{matteo-courthoud}
+\end{contacttable}
+
+%-------------------------------%
+
+\profilesection{Skills}
+\begin{skilltable}
+	\skillitem
+	{\textbf{Statistics}: causal inference, A/B testing, MonteCarlo simulation, bootstrapping, bagging, bayesian inference, GMM, maximum likelihood}
+	\skillitem
+	{\textbf{Machine Learning}: supervised and unsupervised models, NLP (BERT), reinforcement learning}
+	\skillitem
+	{\textbf{Mathematics}: numerical optimization, gradient descent, dynamic programming}
+	\skillitem
+	{\textbf{Economics}: industrial organization, demand estimation, recommendation systems, game theory, market design, combinatorial auctions}
+	\skillitem
+	{\textbf{Computing}: parallelization, multithreading, probabilistic programming}
+\end{skilltable}
+
+%-------------------------------%
+
+\profilesection{Toolbox}
+\toolbox{
+    {Docker $\textbullet$ AWS $\textbullet$ Redshift /0.55},
+    {SQL $\textbullet$ MS Office $\textbullet$ CSS $\textbullet$ HTML /0.8},
+    {Github $\textbullet$ Unix $\textbullet$ Latex /1}}
+
+%-------------------------------%
+
+\profilesection{Coding}
+\begin{codingtable}
+	\codingitem{python.png}
+	{\textbf{Python}: numpy, scipy, pandas, sklearn, XGBoost, LightGBM, pytorch, seaborn}
+	\codingitem{julia.png}
+	{\textbf{Julia}: Optim, DataFrames, Turing, Plots}
+	\codingitem{r.png}
+	{\textbf{R}: tidyverse, dplyr, data.table, ggplot2}
+	\codingitem{tools.png}
+	{\textbf{Misc}: Stata, Matlab, Go, C++, Visual Basic, Pascal}
+\end{codingtable}
+
+
+\end{sidebar}
+
+
+
+%----------------------------------------------------------------------------------------
+% MAIN
+%----------------------------------------------------------------------------------------
+
+\begin{main}
+
+\section{Education}
+
+\begin{experiencelist} 
+	\experienceitem
+    	{2017 - now }
+        {Ph.D. Economics}
+        {\href{https://www.uzh.ch/en/}{\textbf{University of Zurich}, Switzerland}}
+        {Specialization: Industrial Organization and Competition Policy. \\
+         Advisors: \textit{Gregory Crawford}, \textit{Armin Schmutzler}.}
+	\experienceitem
+    	{2021}
+        {Visiting Doctoral Student}
+        {\href{https://www.yale.edu/}{\textbf{Yale University}, United States}}
+        {Host: \textit{Steven Berry}, at the department of Economics.}
+    \experienceitem
+    	{2014- 2016}
+        {M.Sc. Economics\normalfont{, summa cum laude}}
+        {\href{https://www.unibocconi.eu/}{\textbf{Bocconi University}, Italy}}
+        {}
+    \experienceitem
+    	{2011- 2014}
+        {B.Sc. Economics}
+        {\href{https://www.unibocconi.eu/}{\textbf{Bocconi University}, Italy}}
+        {}
+\end{experiencelist}
+
+%-------------------------------%
+
+\section{Work Experience}
+
+\begin{experiencelist}
+    \experienceitem
+    	{2017 - now}
+        {Teaching}
+        {\textbf{University of Zurich}, Switzerland}
+        {Prepared new teaching material for multiple classes in econometrics, machine learning, and industrial organization. Lectured in front of classes of up to 150 students at both MSc and PhD level. Code, notes and lecture slides available on my Github.
+        }
+	\experienceitem
+    	{2021 - now}
+        {Economic Consultant}
+        {\textbf{Crawford Consulting}}
+        {External consultant for large retail platform on antitrust-related concerns. Provided econometric analysis and causal inference of proprietary data using R, AWS EC2, Redshift, SQL.
+        }
+    \experienceitem
+    	{spring 2016}
+        {Economics Intern}
+        {\href{https://ec.europa.eu/competition-policy/chief-competition-economist_en}{\textbf{DG COMP Chief Economist Office}, EU Commission}}
+        {Provided economic and statistical analysis of auction data for the Halliburton-Baker Hughes (10B\$) merger case. Collaborated with large and diverse team and presented results to multiple audiences.
+        }
+\end{experiencelist}
+
+%-------------------------------%
+
+\section{Research}
+\vspace{-.2cm}
+
+\begin{itemize}
+    \item \textbf{Common Ownership and Market Boundaries}
+    \hfill
+    {$
+    \begin{array}{c}
+    \begin{tikzpicture}
+        \node[scale=1, maincolor] at (.5,0){\href{https://matteocourthoud.github.io/project/ownership/}{\faIcon[regular]{file-pdf}}};
+    \end{tikzpicture}
+    \end{array}
+    $}
+    \newline
+    Generated a time-varying measure of S\&P500 firm similarity using a zero-shot clustering model. The model takes as input BERT embeddings of product descriptions and is trained on market definitions from the EU commission. Estimated the causal effect of common ownership on product similarity exploiting quasi-experimental variation in ownership.
+    
+    \item \textbf{Reinforcement Learning Pricing Algorithms}
+    \hfill
+    {$
+    \begin{array}{c}
+    \begin{tikzpicture}
+        \node[scale=1, maincolor] at (0,0){\href{https://github.com/matteocourthoud/Algorithmic-Collusion-Platform}{\faIcon{github}}};
+        \node[scale=1, maincolor] at (.5,0){\href{https://matteocourthoud.github.io/project/alg_platform/}{\faIcon[regular]{file-pdf}}};
+    \end{tikzpicture}
+    \end{array}
+    $}
+    \newline
+    Coded Q-learning pricing algorithms and experimentally studied their strategic interactions, proposing a new method to detect collusion. Introduced an adversarial market maker algorithm, and studied its impact on collusion. Presented work at multiple conferences.
+    
+    \item \textbf{Dynamic Stochastic Games and Competition Policy}
+    \hfill
+    {$
+    \begin{array}{c}
+    \begin{tikzpicture}
+        \node[scale=1, maincolor] at (0,0){\href{https://github.com/matteocourthoud/Foreclosure-Complementarities}{\faIcon{github}}};
+        \node[scale=1, maincolor] at (.5,0){\href{https://matteocourthoud.github.io/project/foreclosure/}{\faIcon[regular]{file-pdf}}};
+    \end{tikzpicture}
+    \end{array}
+    $}
+    \newline
+    {Built a computational model to study firm competition in complementary industries with returns to scale, highlighting complementarities in anticompetitive practices. Presented work at multiple conferences. Introduced new computational tools for the analysis of large dynamic stochastic games.
+    }
+    \vspace{.3cm}
+\end{itemize}
+
+        
+%-------------------------------%     
+        
+\section{Other}
+\vspace{-.2cm}
+\begin{itemize}
+    \item \textbf{1st place}, Machine Learning Datathlon at ETH Zurich (2021)
+    \item \textbf{Referee} for the Journal of Competition Law and Economics (2021)
+    \item \textbf{Languages}: Italian (native), English (fluent), French, German, Spanish (basic)
+\end{itemize}
+
+\end{main}
+
+\end{document} 
